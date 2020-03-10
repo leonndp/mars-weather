@@ -1,0 +1,29 @@
+.DataSelectorWrapper {
+    font-size: 1.3rem;
+    font-weight: 300;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 0;
+    margin-bottom: 3rem;
+
+    display: inline-block;
+    overflow: hidden;
+}
+
+.DataSelectorOption {
+    display: inline-block;
+    
+    padding: 1rem;
+}
+
+.DataSelectorOption input {
+}
+
+.DataSelectorOption:hover {
+    cursor: pointer;
+}
+
+.DataSelectorOption:hover {
+    background-color: rgba(0,0,0,0.75);
+    transition: background-color ease-in-out 0.3s;
+}

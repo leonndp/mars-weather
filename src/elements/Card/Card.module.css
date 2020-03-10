@@ -1,0 +1,39 @@
+.CardWrapper {
+    margin-top: 3rem;
+    position: relative;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.3);
+    width: 180px;
+    height: 250px;
+    transition: background-color ease-in-out 0.3s;
+}
+
+.CardContent {
+    text-align: center;
+    width: 100%;
+    
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.CardWrapper:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.CardContent h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.CardContent h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.selected {
+    background-color: rgba(0,0,0,0.75);
+}

@@ -1,0 +1,15 @@
+.GenericContentWrapper h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.GenericContentWrapper h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.GenericContentWrapper p {
+    font-size: 1.6rem;
+    font-weight: 300;
+}

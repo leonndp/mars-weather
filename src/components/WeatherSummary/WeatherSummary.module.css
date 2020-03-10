@@ -1,0 +1,18 @@
+/* .WeatherSummaryWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.WeatherSummaryVertical {
+    flex-direction: column;
+    text-align: center;
+    align-content: space-between;
+}
+
+.WeatherSummaryVertical * {
+    margin: 0;
+}
+
+.WeatherSummaryHorizontal {
+    flex-direction: row;
+} */
