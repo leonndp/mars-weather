@@ -21,7 +21,8 @@ export default class App extends React.Component {
             currentSol: '',
             solsList: [],
             dataSetting: '',
-            loading: true
+            loading: true,
+            error: null
         }
     }
 
@@ -30,7 +31,7 @@ export default class App extends React.Component {
     }
 
     apiRequestHandler = () => {
-        axios.get('https://api.nasa.gov/insight_weather/?api_key=iWrjD2rgodjkSdJye2mG8Anz8KGN37cyQnDBYl9G&feedtype=json&ver=1.0')
+        axios.get(`https://api.nasa.gov/insight_weather/?api_key=${process.env.REACT_APP_API_KEY}&feedtype=json&ver=1.0`)
             .then((res) => {
                 this.setState({
                     currentSol: res.data.sol_keys[res.data.sol_keys.length - 1],
@@ -41,7 +42,7 @@ export default class App extends React.Component {
                     dataSetting: 'temp',
                     loading: false
                 })
-            })
+            }).catch(err => console.log(err))
     }
 
     getWeatherData = (sol) => {
