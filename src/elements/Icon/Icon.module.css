@@ -1,0 +1,10 @@
+.IconWrapper {
+    width: 40px;
+    pointer-events: none;
+}
+
+@media(min-width: 530px) {
+    .IconWrapper {
+        width: 60px;
+    }
+}

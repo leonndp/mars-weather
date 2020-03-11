@@ -9,6 +9,7 @@ import DataSelector from './../../components/DataSelector'
 import MainWeather from './../../components/MainWeather'
 import ListOfDays from './../../components/ListOfDays'
 
+import Icon from './../../elements/Icon'
 import GenericContentWrapper from './../../elements/GenericContentWrapper'
 
 import classes from './App.module.css'

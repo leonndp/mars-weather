@@ -1,0 +1,8 @@
+{
+    "icons": {
+        "temp": "temperature.svg",
+        "wd": "wind-direction.svg",
+        "hws": "wind-speed.svg",
+        "pre": "pressure.svg"
+    }
+}

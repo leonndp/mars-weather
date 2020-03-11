@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Button from './../../elements/Button'
+import Icon from './../../elements/Icon'
 
 import classes from './DataSelector.module.css'
 
@@ -22,7 +23,10 @@ const DataSelector = props => {
                             key={setting.key}
                             onClickHandler={e => props.onClickHandler(e.target.value)}
                             highlighted={props.dataSetting === setting.key}
-                        >{setting.desc}</Button>
+                            label={setting.desc}
+                        >
+                            <Icon icon={setting.key} />
+                        </Button>
                     )
                 })
             }

@@ -10,7 +10,10 @@ const Button = props => {
     }
 
     return (
-        <button value={props.value} onClick={props.onClickHandler} className={styles.join(' ')}>{props.children}</button>
+        <button value={props.value} onClick={props.onClickHandler} className={styles.join(' ')}>
+            {props.children}
+            <p className={classes.ButtonLabel}>{props.label}</p>
+        </button>
     )
 }
 
