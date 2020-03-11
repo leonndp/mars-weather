@@ -1,12 +1,17 @@
 import React from 'react'
 
-import assetMapping from './../../assets/assetMapping.json'
 import classes from './Icon.module.css'
 
 const Icon = props => {
+    const assetMapping = {
+        temp: "temperature.svg",
+        wd: "wind-direction.svg",
+        hws: "wind-speed.svg",
+        pre: "pressure.svg"
+    }
 
     return (
-        <img className={classes.IconWrapper} src={require(`../../assets/images/icons/${assetMapping.icons[props.icon]}`)} />
+        <img className={classes.IconWrapper} src={require(`../../assets/images/icons/${assetMapping[props.icon]}`)} />
     )
 }
 
