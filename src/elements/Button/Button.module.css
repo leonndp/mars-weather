@@ -2,10 +2,11 @@
     display: inline-block;
     border: none;
     background-color: rgba(0,0,0,0.3);
-    padding: 1rem 1.5rem;
+    padding: .75rem 1rem;
     transition: background-color ease-in-out 0.3s;
     color: white;
     font-weight: 300;
+    font-size: 1rem;
 }
 
 .ButtonWrapper:hover {
@@ -15,4 +16,11 @@
 
 .highlighted {
     background-color: rgba(0,0,0,0.75);
+}
+
+@media(min-width: 530px) {
+    .ButtonWrapper {
+        padding: 1rem 1.5rem;
+        font-size: 1.3rem;
+    }
 }
