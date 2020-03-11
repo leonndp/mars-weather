@@ -12,19 +12,49 @@
     text-shadow: 2px 2px 5px black;  
     max-width: 1400px;
     width: 100%;
-
+    margin: 0 1rem;
+    overflow: hidden;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
 
-.AppFlexWrapper {
-    display: flex;
-    width: 100%;
+.AppGridWrapper {
+    display: grid;
+    grid-template-areas: 
+        'header'
+        '.'
+        'weatherSummary'
+        'cards';
+
+    max-width: 100%;
 }
 
-.AppFlexColumn {
-    max-width: 45%;
+.AppHeaderArea {
+    grid-area: header;
+}
+
+.AppWeatherSummaryArea {
+    grid-area: weatherSummary;
+}
+
+.AppWeatherDetailsArea {
+    grid-area: weatherDetails;
     width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.AppCardsArea {
+    grid-area: cards;
+}
+
+@media(min-width: 530px) {
+    .AppGridWrapper {
+        grid-template-areas: 
+            'header . .'
+            'weatherSummary . .'
+            'cards cards cards';
+    }
 }

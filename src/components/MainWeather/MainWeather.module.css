@@ -1,3 +1,7 @@
+.MainWeatherWrapper {
+        margin: 3rem 0;
+}
+
 .WeatherWrapper {
         display: flex;
         justify-content: space-between;

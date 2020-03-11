@@ -79,15 +79,15 @@ export default class App extends React.Component {
                         <div>Loading...</div>
                     ) : (
                             <div className={classes.AppContentWrapper}>
-                                <div className={classes.AppFlexWrapper}>
+                                {/* <div className={classes.AppFlexWrapper}>
                                     <div className={classes.AppFlexColumn}>
                                         <Header />
-                                        <DataSelector
-                                            onClickHandler={this.handleChangeDataSetting}
-                                            dataSetting={this.state.dataSetting}
-                                        />
                                         <MainWeather
                                             weatherData={this.getWeatherData(this.state.currentSol)}
+                                            dataSetting={this.state.dataSetting}
+                                        />
+                                        <DataSelector
+                                            onClickHandler={this.handleChangeDataSetting}
                                             dataSetting={this.state.dataSetting}
                                         />
                                     </div>
@@ -96,7 +96,32 @@ export default class App extends React.Component {
                                     solsList={this.state.solsList}
                                     onClickHandler={this.handleSelectSol}
                                     currentSol={this.state.currentSol}
-                                />
+                                /> */}
+
+                                <div className={classes.AppGridWrapper}>
+                                    <div className={classes.AppHeaderArea}>
+                                        <Header />
+                                    </div>
+                                    <div className={classes.AppWeatherSummaryArea}>
+                                        <MainWeather
+                                            weatherData={this.getWeatherData(this.state.currentSol)}
+                                            dataSetting={this.state.dataSetting}
+                                        />
+                                        <DataSelector
+                                            onClickHandler={this.handleChangeDataSetting}
+                                            dataSetting={this.state.dataSetting}
+                                        />
+                                    </div>
+                                    <div className={classes.AppWeatherDetailsArea}>
+                                    </div>
+                                    <div className={classes.AppCardsArea}>
+                                        <ListOfDays
+                                            solsList={this.state.solsList}
+                                            onClickHandler={this.handleSelectSol}
+                                            currentSol={this.state.currentSol}
+                                        />
+                                    </div>
+                                </div>
 
                             </div>
                         )
